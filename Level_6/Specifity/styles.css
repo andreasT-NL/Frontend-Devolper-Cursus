@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Verdana, sans-serif;    
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header p {
+    color: #b1b1b1;
+    margin-top: -30px;
+}
+
+main {
+    color: #636363;
+    line-height: 20px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+}
+footer ul {
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px ;
+}
+
+ul.approve {
+    color: green;
+    border: green solid 1px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+ul.decline {
+    color: red;
+    border: red solid 1px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+img {
+    margin-left: auto;
+    margin-top: -10px;
+    height: 70px;
+}
+
+hr {
+    height: 1px;
+    border-width: 0;
+    background-color: #b1b1b1; 
+    margin: 15px -15px; 
+}
+
+/* Grid */
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2em;
+    margin: 20px;
+}
+
+.carla, .marijn {
+    display: inline;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    padding: 15px;
+    width: 350px;
+}
+.carla {
+    grid-column: 1 / 2;
+}
+
+.marijn {
+    grid-column: 2 / 3;
+}
