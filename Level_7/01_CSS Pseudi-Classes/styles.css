@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    background-color: darkblue;
+    text-align: center;
+}
+
+ul a {
+    color: white;
+}
+
+ul a:hover{
+    background-color: lightblue;
+}
+
+ul li:first-child {
+    margin-left: -30px;
+}
+
+.currentPage {
+    background-color: rgb(116, 134, 151);
+
+}
+.currentPage:active {
+    background-color: rgb(116, 134, 151);
+}
+
+li input:focus {
+    border: 5px solid red;
+    outline: none;
+}
+
+
+a.hover:hover {
+font-weight: bold;
+color: lightblue;
+}
+
+a.active:active {
+font-style: italic;
+color: red;
+}
+
+a.visited:visited {
+color: yellow;
+}
+
+textarea:focus {
+    color: green;
+    font-size: 20px;
+}

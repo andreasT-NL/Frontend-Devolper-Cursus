@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Specificity</title>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#">LINK 1</a></li>
+                <li class="currentPage"><a href="index.html">LINK 2</a></li>
+                <li><a href="#">LINK 3</a></li>
+                <li><input type="search"></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+    <a class="hover" href="#">
+        <p>HOVER LINK - BOLD & LIGHTBLUE</p>
+    </a>
+    <a class="active" href="#">
+        <p>ACTIVE LINK - ITALIC & RED</p>
+    </a>
+    <a class="visited" href="#">
+        <p>VISITED LINK - YELLOW</p>
+    </a>
+    <textarea name="focus" id="focus" cols="30" rows="10">hello</textarea>
+</body>
+
+</html>
