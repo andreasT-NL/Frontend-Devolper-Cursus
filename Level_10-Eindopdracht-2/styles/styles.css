@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+HTML, body {
+  background-color: #c3cfe2;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0px, 50px, 0px, 50px;
+  height: 100%;
+}
+
+/* opdracht 1 */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.flex-container .square {
+  box-shadow: 3px 3px 15px grey;
+}
+.flex-container .square-1 {
+  border-radius: 25px 25px 0px 0px;
+  width: 450px;
+  height: 380px;
+  background-color: #fff;
+}
+.flex-container .square-1 p {
+  margin: 40px;
+  font-size: 1.35rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.05rem;
+  color: #585858;
+}
+.flex-container .square-2 {
+  border-radius: 0px 0px 25px 25px;
+  width: 450px;
+  height: 180px;
+  background-color: #686de0;
+}
+.flex-container .square-2 .portrait {
+  text-align: center;
+}
+.flex-container .square-2 .portrait img {
+  height: 120px;
+  width: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -60px;
+  border-radius: 50%;
+  border: solid #fff 5px;
+}
+.flex-container .square-2 .name {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
+}
+.flex-container .square-2 .subname {
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  letter-spacing: 0.03rem;
+  margin-top: 1rem;
+}
+
+/* opdracht 1 End */
+/* opdracht 2 */
+.foto-container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  justify-content: center;
+  margin: 50px 20px;
+}
+
+.foto-container > div {
+  max-width: 30%;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.foto-container > div > img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.foto-container > div:nth-of-type(7) {
+  justify-self: center;
+}
+
+@media screen and (max-width: 900px) {
+  .foto-container > div {
+    max-width: 40%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .foto-container > div {
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
